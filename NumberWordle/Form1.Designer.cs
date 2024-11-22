@@ -44,7 +44,7 @@
             btnSubmit.BackColor = SystemColors.ButtonHighlight;
             btnSubmit.Font = new Font("Times New Roman", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnSubmit.Location = new Point(258, 12);
-            btnSubmit.Name = "ButtonSubmit";
+            btnSubmit.Name = "btnSubmit";
             btnSubmit.Size = new Size(179, 47);
             btnSubmit.TabIndex = 1;
             btnSubmit.Text = "Submit Guess";
@@ -57,7 +57,7 @@
             lstResults.FormattingEnabled = true;
             lstResults.ItemHeight = 28;
             lstResults.Location = new Point(443, 12);
-            lstResults.Name = "ListResult";
+            lstResults.Name = "lstResults";
             lstResults.Size = new Size(345, 424);
             lstResults.TabIndex = 2;
             // 
@@ -66,7 +66,7 @@
             lblFeedback.AutoSize = true;
             lblFeedback.Font = new Font("Segoe UI", 12F);
             lblFeedback.Location = new Point(187, 62);
-            lblFeedback.Name = "LabelFeedback";
+            lblFeedback.Name = "lblFeedback";
             lblFeedback.Size = new Size(65, 28);
             lblFeedback.TabIndex = 3;
             lblFeedback.Text = "label1";
@@ -77,7 +77,7 @@
             btnRestart.Font = new Font("Times New Roman", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnRestart.ForeColor = Color.Coral;
             btnRestart.Location = new Point(12, 397);
-            btnRestart.Name = "ButtonRestart";
+            btnRestart.Name = "btnRestart";
             btnRestart.Size = new Size(425, 39);
             btnRestart.TabIndex = 4;
             btnRestart.Text = "Restart Game";
@@ -89,7 +89,7 @@
             txtDigit1.Font = new Font("Segoe UI", 12F);
             txtDigit1.Location = new Point(12, 18);
             txtDigit1.MaxLength = 1;
-            txtDigit1.Name = "textBox1";
+            txtDigit1.Name = "txtDigit1";
             txtDigit1.Size = new Size(40, 34);
             txtDigit1.TabIndex = 1;
             // 
@@ -98,7 +98,7 @@
             txtDigit2.Font = new Font("Segoe UI", 12F);
             txtDigit2.Location = new Point(58, 18);
             txtDigit2.MaxLength = 1;
-            txtDigit2.Name = "textBox2";
+            txtDigit2.Name = "txtDigit2";
             txtDigit2.Size = new Size(40, 34);
             txtDigit2.TabIndex = 2;
             // 
@@ -107,7 +107,7 @@
             txtDigit3.Font = new Font("Segoe UI", 12F);
             txtDigit3.Location = new Point(104, 18);
             txtDigit3.MaxLength = 1;
-            txtDigit3.Name = "textBox3";
+            txtDigit3.Name = "txtDigit3";
             txtDigit3.Size = new Size(40, 34);
             txtDigit3.TabIndex = 3;
             // 
@@ -116,7 +116,7 @@
             txtDigit4.Font = new Font("Segoe UI", 12F);
             txtDigit4.Location = new Point(150, 18);
             txtDigit4.MaxLength = 1;
-            txtDigit4.Name = "textBox4";
+            txtDigit4.Name = "txtDigit4";
             txtDigit4.Size = new Size(40, 34);
             txtDigit4.TabIndex = 4;
             // 
@@ -125,7 +125,7 @@
             txtDigit5.Font = new Font("Segoe UI", 12F);
             txtDigit5.Location = new Point(196, 18);
             txtDigit5.MaxLength = 1;
-            txtDigit5.Name = "textBox5";
+            txtDigit5.Name = "txtDigit5";
             txtDigit5.Size = new Size(40, 34);
             txtDigit5.TabIndex = 5;
             // 
