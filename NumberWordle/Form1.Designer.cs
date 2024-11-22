@@ -54,6 +54,7 @@
             // 
             // lstResults
             // 
+            lstResults.DrawMode = DrawMode.OwnerDrawFixed;
             lstResults.Font = new Font("Segoe UI", 12F);
             lstResults.FormattingEnabled = true;
             lstResults.ItemHeight = 28;
@@ -61,6 +62,7 @@
             lstResults.Name = "lstResults";
             lstResults.Size = new Size(345, 424);
             lstResults.TabIndex = 9;
+            lstResults.DrawItem += lstResults_DrawItem;
             // 
             // lblFeedback
             // 
@@ -70,7 +72,6 @@
             lblFeedback.Size = new Size(425, 339);
             lblFeedback.TabIndex = 8;
             lblFeedback.Text = resources.GetString("lblFeedback.Text");
-            lblFeedback.Click += label1_Click;
             // 
             // btnRestart
             // 
@@ -150,7 +151,6 @@
             Controls.Add(btnSubmit);
             Name = "Form1";
             Text = "Number Wordle Game";
-            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
