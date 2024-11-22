@@ -72,6 +72,7 @@
             lblFeedback.Size = new Size(425, 339);
             lblFeedback.TabIndex = 8;
             lblFeedback.Text = resources.GetString("lblFeedback.Text");
+            lblFeedback.Click += lblFeedback_Click;
             // 
             // btnRestart
             // 

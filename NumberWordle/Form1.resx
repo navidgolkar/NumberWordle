@@ -119,8 +119,8 @@
   </resheader>
   <data name="lblFeedback.Text" xml:space="preserve">
     <value>Instructions:
-The game has randomly guessed a 5-digit number and in the textboxes above you can guess the digits, you can only enter a 1-digit muber in the boxes.
-In the listbox to the right is shown how accurate your guesses were by colors:
+The game has randomly guessed a 5-digit number and in the textboxes above you can guess the digits; You can only enter a 1-digit number in each box.
+In the listbox to the right the result of your guess is shown by colors:
 Green: Your guess of the digit is correct.
 Yellow: The number was right, but it is positioned in another place.
 Red: The digit you guessed isn't in the numbers.</value>

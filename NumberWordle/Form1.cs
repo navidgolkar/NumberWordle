@@ -13,6 +13,12 @@ namespace NumberWordle
             txtDigit3.KeyPress += txtDigit_KeyPress;
             txtDigit4.KeyPress += txtDigit_KeyPress;
             txtDigit5.KeyPress += txtDigit_KeyPress;
+            // Attach KeyDown event handler to all textboxes
+            txtDigit1.KeyDown += txtDigit_KeyDown;
+            txtDigit2.KeyDown += txtDigit_KeyDown;
+            txtDigit3.KeyDown += txtDigit_KeyDown;
+            txtDigit4.KeyDown += txtDigit_KeyDown;
+            txtDigit5.KeyDown += txtDigit_KeyDown;
             StartNewGame();
         }
         private void StartNewGame()
@@ -46,13 +52,10 @@ namespace NumberWordle
             // Check for win
             if (userGuess == secretNumber)
             {
-                lblFeedback.Text = $"Congratulations! You guessed the number in {attempts} attempts.";
+                lblFeedback.Text = $"Congratulations!\nYou guessed the number in {attempts} attempts.";
                 DisableInput();
             }
-            else
-            {
-
-            }
+            ClearAndFocusTextboxes();
         }
         private void btnRestart_Click(object sender, EventArgs e)
         {
@@ -62,6 +65,7 @@ namespace NumberWordle
             txtDigit4.Enabled = true;
             txtDigit5.Enabled = true;
             btnSubmit.Enabled = true;
+            lblFeedback.Text = $"Instructions:\r\nThe game has randomly guessed a 5-digit number and in the textboxes above you can guess the digits; You can only enter a 1-digit number in each box.\r\nIn the listbox to the right the result of your guess is shown by colors:\r\nGreen: Your guess of the digit is correct.\r\nYellow: The number was right, but it is positioned in another place.\r\nRed: The digit you guessed isn't in the numbers.\r\n";
             StartNewGame();
         }
         private void DisableInput()
@@ -72,6 +76,29 @@ namespace NumberWordle
             txtDigit4.Enabled = false;
             txtDigit5.Enabled = false;
             btnSubmit.Enabled = false;
+        }
+        private void ClearAndFocusTextboxes()
+        {
+            txtDigit1.Text = string.Empty;
+            txtDigit2.Text = string.Empty;
+            txtDigit3.Text = string.Empty;
+            txtDigit4.Text = string.Empty;
+            txtDigit5.Text = string.Empty;
+            txtDigit1.Focus();
+        }
+        private void txtDigit_KeyDown(object sender, KeyEventArgs e)
+        {
+            TextBox currentTextBox = sender as TextBox;
+
+            // If Backspace is pressed and the textbox is empty
+            if (e.KeyCode == Keys.Back && string.IsNullOrEmpty(currentTextBox.Text))
+            {
+                // Focus the previous textbox
+                if (currentTextBox == txtDigit2) txtDigit1.Focus();
+                else if (currentTextBox == txtDigit3) txtDigit2.Focus();
+                else if (currentTextBox == txtDigit4) txtDigit3.Focus();
+                else if (currentTextBox == txtDigit5) txtDigit4.Focus();
+            }
         }
         private List<(char, Color)> GetFeedback(string guess)
         {
