@@ -44,13 +44,13 @@
             // 
             btnSubmit.BackColor = SystemColors.ButtonHighlight;
             btnSubmit.Font = new Font("Times New Roman", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnSubmit.Location = new Point(258, 12);
+            btnSubmit.Location = new Point(258, 18);
             btnSubmit.Name = "btnSubmit";
-            btnSubmit.Size = new Size(179, 47);
-            btnSubmit.TabIndex = 1;
+            btnSubmit.Size = new Size(179, 34);
+            btnSubmit.TabIndex = 6;
             btnSubmit.Text = "Submit Guess";
             btnSubmit.UseVisualStyleBackColor = false;
-            btnSubmit.Click += button1_Click;
+            btnSubmit.Click += btnSubmit_Click;
             // 
             // lstResults
             // 
@@ -60,7 +60,7 @@
             lstResults.Location = new Point(443, 12);
             lstResults.Name = "lstResults";
             lstResults.Size = new Size(345, 424);
-            lstResults.TabIndex = 2;
+            lstResults.TabIndex = 9;
             // 
             // lblFeedback
             // 
@@ -68,7 +68,7 @@
             lblFeedback.Location = new Point(12, 55);
             lblFeedback.Name = "lblFeedback";
             lblFeedback.Size = new Size(425, 339);
-            lblFeedback.TabIndex = 3;
+            lblFeedback.TabIndex = 8;
             lblFeedback.Text = resources.GetString("lblFeedback.Text");
             lblFeedback.Click += label1_Click;
             // 
@@ -79,10 +79,10 @@
             btnRestart.Location = new Point(12, 397);
             btnRestart.Name = "btnRestart";
             btnRestart.Size = new Size(425, 39);
-            btnRestart.TabIndex = 4;
+            btnRestart.TabIndex = 7;
             btnRestart.Text = "Restart Game";
             btnRestart.UseVisualStyleBackColor = true;
-            btnRestart.Click += button1_Click_1;
+            btnRestart.Click += btnRestart_Click;
             // 
             // txtDigit1
             // 
