@@ -117,4 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lblFeedback.Text" xml:space="preserve">
+    <value>Instructions:
+The game has randomly guessed a 5-digit number and in the textboxes above you can guess the digits, you can only enter a 1-digit muber in the boxes.
+In the listbox to the right is shown how accurate your guesses were by colors:
+Green: Your guess of the digit is correct.
+Yellow: The number was right, but it is positioned in another place.
+Red: The digit you guessed isn't in the numbers.</value>
+  </data>
 </root>

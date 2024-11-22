@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             btnSubmit = new Button();
             lstResults = new ListBox();
             lblFeedback = new Label();
@@ -63,13 +64,12 @@
             // 
             // lblFeedback
             // 
-            lblFeedback.AutoSize = true;
             lblFeedback.Font = new Font("Segoe UI", 12F);
-            lblFeedback.Location = new Point(187, 62);
+            lblFeedback.Location = new Point(12, 55);
             lblFeedback.Name = "lblFeedback";
-            lblFeedback.Size = new Size(65, 28);
+            lblFeedback.Size = new Size(425, 339);
             lblFeedback.TabIndex = 3;
-            lblFeedback.Text = "label1";
+            lblFeedback.Text = resources.GetString("lblFeedback.Text");
             lblFeedback.Click += label1_Click;
             // 
             // btnRestart
@@ -92,6 +92,7 @@
             txtDigit1.Name = "txtDigit1";
             txtDigit1.Size = new Size(40, 34);
             txtDigit1.TabIndex = 1;
+            txtDigit1.TextAlign = HorizontalAlignment.Center;
             // 
             // txtDigit2
             // 
@@ -101,6 +102,7 @@
             txtDigit2.Name = "txtDigit2";
             txtDigit2.Size = new Size(40, 34);
             txtDigit2.TabIndex = 2;
+            txtDigit2.TextAlign = HorizontalAlignment.Center;
             // 
             // txtDigit3
             // 
@@ -110,6 +112,7 @@
             txtDigit3.Name = "txtDigit3";
             txtDigit3.Size = new Size(40, 34);
             txtDigit3.TabIndex = 3;
+            txtDigit3.TextAlign = HorizontalAlignment.Center;
             // 
             // txtDigit4
             // 
@@ -119,6 +122,7 @@
             txtDigit4.Name = "txtDigit4";
             txtDigit4.Size = new Size(40, 34);
             txtDigit4.TabIndex = 4;
+            txtDigit4.TextAlign = HorizontalAlignment.Center;
             // 
             // txtDigit5
             // 
@@ -128,6 +132,7 @@
             txtDigit5.Name = "txtDigit5";
             txtDigit5.Size = new Size(40, 34);
             txtDigit5.TabIndex = 5;
+            txtDigit5.TextAlign = HorizontalAlignment.Center;
             // 
             // Form1
             // 
@@ -144,7 +149,7 @@
             Controls.Add(lstResults);
             Controls.Add(btnSubmit);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Number Wordle Game";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
